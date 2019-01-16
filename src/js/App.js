@@ -18,13 +18,15 @@ class App {
                     </section>
                 </header>
             </div>
-            <main>
+            <main id="maincontent">
             `;
         //Insert header
         document.body.insertAdjacentHTML('beforeend', headerHTML);
 
         //Create and insert news
-        setupNews();
+        const newsSectionHTML = setupNews();
+
+        document.getElementById('maincontent').append(newsSectionHTML);
 
         //Footer
         const FooterHTML = `
