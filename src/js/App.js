@@ -1,4 +1,6 @@
 //Import needed files
+import newsAPI from './model/API.js'
+import setupNews from './controller/NewsController.js';
 
 class App {
     constructor() {
@@ -20,6 +22,9 @@ class App {
             `;
         //Insert header
         document.body.insertAdjacentHTML('beforeend', headerHTML);
+
+        //Create and insert news
+        setupNews();
 
         //Footer
         const FooterHTML = `
