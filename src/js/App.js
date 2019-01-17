@@ -93,7 +93,7 @@ class App {
                 </section>
             </footer>
         `;
-
+        //Insert footer
         document.body.insertAdjacentHTML('beforeend', FooterHTML);
     }
 }

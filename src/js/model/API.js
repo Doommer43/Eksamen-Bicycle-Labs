@@ -1,6 +1,6 @@
 //Import needed components
 import News from './News.js';
-
+//API for news return an array of all news
 export default function newsAPI() {
     const URL = 'http://bicycleinnovationlab.kljo.aspitcloud.dk/wp-json/wp/v2/posts';
     return fetch(URL,)

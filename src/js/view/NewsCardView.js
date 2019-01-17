@@ -1,6 +1,6 @@
 //Imports
 import News from '../model/News.js';
-
+//Primary news render
 export function singleRender(news,size = 6){
     return `
             <article class="col-md-${size} col-sm-12 newsItem">
@@ -15,7 +15,7 @@ export function singleRender(news,size = 6){
             </article>
         `;
 }
-
+//Feature news render
 export function featuredRender(news){
     return `
             <article class="col-12 newsItem">

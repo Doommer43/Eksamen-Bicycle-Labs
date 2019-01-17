@@ -1,7 +1,7 @@
 //Imports
 import newsAPI from '../model/API.js';
 import { singleRender, featuredRender } from '../view/NewsCardView.js';
-
+//Run in app on start
 export default function setupNews() {
     const newsTitle = `
         <section class="d-flex justify-content-center text-center row col-md-8 col-sm-12 m-auto" id="">
@@ -14,12 +14,14 @@ export default function setupNews() {
         <section id="news" class="d-flex flex-wrap col-md-6 col-sm-12"></section>
         <button type="button" class="btn border-primary my-3 text-primary" id="morenews">Vis flere</button>
     `;
+    //Inserts empty news shells
     document.getElementById('maincontent').insertAdjacentHTML('beforeend',newsTitle);
 
     //Add eventlistener to button
     document.getElementById('morenews').addEventListener("click", () => {
         moreNews(newsAPI());
     });
+    //Loads the first five news
     newNews(newsAPI());
 
 /*
@@ -64,7 +66,7 @@ function moreNews(news){
             // console.log("html",newsHTML)
         });
         let templateHTML = `
-        <section class="d-flex flex-wrap col-12">
+        <section class="d-flex flex-wrap col-12 pt-2">
         ${newsHTML}
         </section>
     `;
@@ -73,7 +75,7 @@ function moreNews(news){
         button.remove();
     });
 }
-
+//Special function for featured news
 function featuredNews(news) {
     let rendered = featuredRender(news);
     document.getElementById('featured').innerHTML = rendered;
