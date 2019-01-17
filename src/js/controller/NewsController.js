@@ -13,7 +13,7 @@ export default function setupNews() {
         <section id="featured" class="col-md-6 col-sm-12">
         </section>
         <section id="news" class="d-flex flex-wrap col-md-6 col-sm-12"></section>
-        <button class="btn btn-danger" id="morenews">hello</button>
+        <button class="btn btn-danger my-3" id="morenews">Vis flere</button>
     `;
     document.getElementById('maincontent').insertAdjacentHTML('beforeend',newsTitle);
 
