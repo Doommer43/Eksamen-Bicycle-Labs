@@ -24,9 +24,7 @@ class App {
         document.body.insertAdjacentHTML('beforeend', headerHTML);
 
         //Create and insert news
-        const newsSectionHTML = setupNews();
-
-        document.getElementById('maincontent').append(newsSectionHTML);
+        setupNews();
 
         //Footer
         const FooterHTML = `
