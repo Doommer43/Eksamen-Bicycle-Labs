@@ -1,5 +1,4 @@
 //Import needed files
-import newsAPI from './model/API.js'
 import setupNews from './controller/NewsController.js';
 
 class App {

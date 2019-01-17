@@ -1,5 +1,4 @@
 //Imports
-import CreateNewsView from '../view/NewsCardView.js';
 import newsAPI from '../model/API.js';
 import { singleRender, featuredRender } from '../view/NewsCardView.js';
 
