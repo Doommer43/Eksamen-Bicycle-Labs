@@ -6,19 +6,19 @@ class App {
     constructor() {
         //Header
         const headerHTML = `
-            <div class ="d-flex justify-content-center">
+            <section class="d-flex justify-content-center col-8 m-auto">
                 <header>
                     <section class="d-inline-block">
                         <h1>Bicycle Innovation Lab</h1>
                         <p>loram ipsum</p>
-                        <button>Bliv medlem</button>
+                        <button class="btn btn-danger">Bliv medlem</button>
                     </section>
                     <section class="d-inline-block">
                         <img src="./src//assets/jumbotron.gif"/>
                     </section>
                 </header>
-            </div>
-            <main id="maincontent">
+            </section>
+            <main id="maincontent" class="text-center">
             `;
         //Insert header
         document.body.insertAdjacentHTML('beforeend', headerHTML);
@@ -30,7 +30,7 @@ class App {
         const FooterHTML = `
             </main>
             <!-- Footer -->
-            <footer class="d-flex justify-content-around">
+            <footer class="d-flex justify-content-between col-8 m-auto">
                 <section class="d-inline-block">
                     <h3>Projekter & tilbud</h3>
                     <ul>
