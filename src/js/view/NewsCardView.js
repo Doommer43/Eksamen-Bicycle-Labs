@@ -9,7 +9,7 @@ export function singleRender(news,size = 6){
                         <img src="${news.featured_image_src}" class="img-fluid"/>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">${news.title}</h2>
+                        <h5 class="card-title">${news.title}</h5>
                     </div>
                 </div>
             </article>

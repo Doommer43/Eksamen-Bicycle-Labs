@@ -84,10 +84,12 @@ class App {
                         </li>
                     </ul>
 
-                    <ul>
-                    <p>Ligebanan</p>
+                    <ul class="list-unstyled">
                     <li>
-                    <p>2017-2018</p>
+                    <p class=""text-small">Ligebanan</p>
+                    </li>
+                    <li>
+                    <p class="text-muted">&copy 2017-2018</p>
                     </li>
                     </ul>
                 </section>
