@@ -9,7 +9,7 @@ export function singleRender(news,size = 6){
                         <img src="${news.featured_image_src}" class="img-fluid"/>
                     </div>
                     <div class="card-content">
-                        <p>${news.title}</p>
+                        <h2 class="card-title">${news.title}</h2>
                     </div>
                 </div>
             </article>
@@ -24,7 +24,8 @@ export function featuredRender(news){
                         <img src="${news.featured_image_src}" class="img-fluid"/>
                     </div>
                     <div class="card-content">
-                        <p>${news.title}</p>
+                        <h2 class="card-titel">${news.title}</h2>
+                        <p class="card-text">${news.excerpt}</p>
                     </div>
                 </div>
             </article>

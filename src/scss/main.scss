@@ -1,6 +1,8 @@
+$theme-colors: (
+  "primary" : #ec0493
+);
 
+$body-bg: #f7f7f7;
+$card-bg: #f7f7f7;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-body {
-  background: #f7f7f7;
-}

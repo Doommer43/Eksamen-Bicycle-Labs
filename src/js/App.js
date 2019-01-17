@@ -6,12 +6,12 @@ class App {
     constructor() {
         //Header
         const headerHTML = `
-            <section class="d-flex flex-wrap justify-content-center col-md-8 col-sm-12 m-auto">
+            <section class="d-flex flex-wrap justify-content-between col-md-8 col-sm-12 m-auto">
                 <header>
                     <section class="d-inline-block align-middle col-md-6 col-sm-12">
                         <h1>Bicycle Innovation Lab</h1>
                         <p>Forening med cykelbibliotek, værksted og forskellige innovative cykelprojekter til fremme for cykelkulturen, o cyklen som det miljørigtige og sunde alternativ til bilen</p>
-                        <button class="btn btn-danger">Bliv medlem</button>
+                        <button type="button" class="btn btn-primary">Bliv medlem</button>
                     </section>
                     <section class="d-inline-block col-md-5 col-sm-12">
                         <img src="./src//assets/jumbotron.gif" class="img-fluid"/>

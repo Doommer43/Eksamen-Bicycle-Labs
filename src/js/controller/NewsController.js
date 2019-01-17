@@ -8,12 +8,12 @@ export default function setupNews() {
         <section class="d-flex justify-content-center text-center row col-md-8 col-sm-12 m-auto" id="">
         <article class="col-12">
         <h2>Nyheder</h2>
-        <p>Loram ipsum</p>
+        <p>Følg med i hvad der sket af spændende og nyskabende ting ved Bicycle Innovation Lab. Føl med i hvad der sker og få nyheder på mail eller se arkivet for at se hvad det tidligere er sket.</p>
         </article>
         <section id="featured" class="col-md-6 col-sm-12">
         </section>
         <section id="news" class="d-flex flex-wrap col-md-6 col-sm-12"></section>
-        <button class="btn btn-danger my-3" id="morenews">Vis flere</button>
+        <button type="button" class="btn border-primary my-3 text-primary" id="morenews">Vis flere</button>
     `;
     document.getElementById('maincontent').insertAdjacentHTML('beforeend',newsTitle);
 
@@ -69,7 +69,9 @@ function moreNews(news){
         ${newsHTML}
         </section>
     `;
-        document.getElementById('morenews').insertAdjacentHTML('beforebegin', templateHTML);
+        let button = document.getElementById('morenews')
+        button.insertAdjacentHTML('beforebegin', templateHTML);
+        button.remove();
     });
 }
 
