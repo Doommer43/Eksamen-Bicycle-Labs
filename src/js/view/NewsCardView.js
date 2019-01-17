@@ -3,7 +3,7 @@ import News from '../model/News.js';
 
 export function singleRender(news,size = 6){
     return `
-            <article class="col-${size} newsItem">
+            <article class="col-md-${size} col-sm-12 newsItem">
                 <div class="card">
                     <div class="card-image">
                         <img src="${news.featured_image_src}" class="img-fluid"/>

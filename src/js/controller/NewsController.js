@@ -5,14 +5,14 @@ import { singleRender, featuredRender } from '../view/NewsCardView.js';
 
 export default function setupNews() {
     const newsTitle = `
-        <section class="d-flex justify-content-center text-center row col-8 m-auto" id="">
+        <section class="d-flex justify-content-center text-center row col-md-8 col-sm-12 m-auto" id="">
         <article class="col-12">
         <h2>Nyheder</h2>
         <p>Loram ipsum</p>
         </article>
-        <section id="featured" class="col-6">
+        <section id="featured" class="col-md-6 col-sm-12">
         </section>
-        <section id="news" class="d-flex flex-wrap col-6"></section>
+        <section id="news" class="d-flex flex-wrap col-md-6 col-sm-12"></section>
         <button class="btn btn-danger" id="morenews">hello</button>
     `;
     document.getElementById('maincontent').insertAdjacentHTML('beforeend',newsTitle);
@@ -21,8 +21,6 @@ export default function setupNews() {
     document.getElementById('morenews').addEventListener("click", () => {
         moreNews(newsAPI());
     });
-
-    console.log("Pre");
     newNews(newsAPI());
 
 /*
@@ -42,8 +40,8 @@ export default function setupNews() {
     `;
     */
 }
-
-export function newNews(news){
+//Loads inital five news articles
+function newNews(news){
     let newsHTML = '';
     news.then(response => {
         featuredNews(response.shift());
@@ -56,13 +54,13 @@ export function newNews(news){
         document.getElementById('news').innerHTML += newsHTML;    
     })
 }
-
+//Loads all but the initial five news articles
 function moreNews(news){
     console.log("Event")
     let newsHTML = '';
     news.then(response => {
         let arr = response.slice(5);
-        response.forEach(item => {
+        arr.forEach(item => {
             newsHTML += singleRender(item,3);
             // console.log("html",newsHTML)
         });

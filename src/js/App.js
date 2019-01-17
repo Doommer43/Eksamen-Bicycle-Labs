@@ -6,7 +6,7 @@ class App {
     constructor() {
         //Header
         const headerHTML = `
-            <section class="d-flex justify-content-center col-8 m-auto">
+            <section class="d-flex justify-content-center col-md-8 col-sm-12 m-auto">
                 <header>
                     <section class="d-inline-block">
                         <h1>Bicycle Innovation Lab</h1>
@@ -30,8 +30,8 @@ class App {
         const FooterHTML = `
             </main>
             <!-- Footer -->
-            <footer class="d-flex justify-content-between col-8 m-auto">
-                <section class="d-inline-block">
+            <footer class="footer d-flex flex-wrap justify-content-between col-md-8 col-sm-12 m-auto">
+                <section class="d-inline-block col-md-4 col-sm-12">
                     <h3>Projekter & tilbud</h3>
                     <ul>
                         <li>
@@ -54,7 +54,7 @@ class App {
                         </li>
                     </ul>
                 </section>
-                <section class="d-inline-block">
+                <section class="d-inline-block col-md-4 col-sm-12">
                 <h3>Om os</h3>
                     <ul>
                         <li>
@@ -68,7 +68,7 @@ class App {
                         </li>
                     </ul>
                 </section>
-                <section class="d-inline-block">
+                <section class="d-inline-block col-md-4 col-sm-12">
                 <h3>Kontakt</h3>
                     <ul>
                         <li>
